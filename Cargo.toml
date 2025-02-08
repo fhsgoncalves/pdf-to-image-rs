@@ -1,0 +1,10 @@
+[package]
+name = "pdf-to-image-rs"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+clap = { version = "4.5.28", features = ["derive"] }
+image = "0.25.5"
+# compatible pdfium binary version was downloaded from: https://github.com/bblanchon/pdfium-binaries/releases/tag/chromium%2F6569
+pdfium-render = { version = "=0.8.27", features = ["sync", "thread_safe"] }
